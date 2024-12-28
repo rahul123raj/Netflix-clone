@@ -6,7 +6,8 @@ const Login = () => {
 
   const [islogin, setIslogin] = useState(false)
 
-  let loginHandler = (e) =>{
+  let registerHandler = () =>{
+    
     setIslogin(!islogin)
   }
 
@@ -40,7 +41,7 @@ const Login = () => {
             <button className="bg-red-600 w-40 py-2 rounded-md font-medium cursor-pointer w-28 text-white mt-8 mb-3">{islogin ? "Create Account" :  "Login" }</button>
             <div className="flex mb-3">
 
-            <p className="text-white">{!islogin ? "New to Netflix" : "Already have an account ?"}</p> <span onClick={loginHandler} className="cursor-pointer text-blue-300 ml-2 font-medium">{!islogin ? "Create Account" : "Login"}</span>
+            <p className="text-white">{!islogin ? "New to Netflix" : "Already have an account ?"}</p> <span onClick={registerHandler} className="cursor-pointer text-blue-300 ml-2 font-medium">{!islogin ? "Create Account" : "Login"}</span>
             </div>
           </div>
         </form>
