@@ -3,11 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const movieSlice = createSlice({
   name: "movies",
   initialState: {
-    nowPlayingMovies: null,
+    nowPlayingMovies: [],
     popularMovies: null,
     topRatedMovies: null,
     upcomingMovies: null,
     toggle: false,
+    trailerMovie: null,
+    open: false,
+    id: "",
   },
   reducers: {
     //?actions
@@ -26,6 +29,15 @@ const movieSlice = createSlice({
     setToggle: (state) => {
       state.toggle = !state.toggle;
     },
+    getTrailerMovie: (state, action) => {
+      state.trailerMovie = action.payload;
+    },
+    setOpen: (state, action) => {
+      state.open = action.payload;
+    },
+    getid: (state, action) => {
+      state.id = action.payload;
+    },
   },
 });
 
@@ -35,5 +47,8 @@ export const {
   getTopRatedMovies,
   getUpcomingMovies,
   setToggle,
+  getTrailerMovie,
+  setOpen,
+  getid,
 } = movieSlice.actions;
 export default movieSlice.reducer;

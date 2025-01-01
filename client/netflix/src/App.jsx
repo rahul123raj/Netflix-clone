@@ -1,5 +1,6 @@
 import Body from '../src/component/Body'
 import { Toaster } from 'react-hot-toast';
+import MovieDialog from './component/MovieDialog';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Body />
       <Toaster />
+      <MovieDialog />
     </>
   )
 }
