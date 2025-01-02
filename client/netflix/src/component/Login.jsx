@@ -70,9 +70,9 @@ const Login = () => {
       }
     }
 
-    // setName("")
-    // setEmail("")
-    // setPassword("")
+    setName("")
+    setEmail("")
+    setPassword("")
   };
 
   let registerHandler = () => {
