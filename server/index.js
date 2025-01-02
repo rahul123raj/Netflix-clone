@@ -14,7 +14,7 @@ dotenv.config()
 databaseConnect()
 
 const corsOptions = {
-    origin: "http://localhost:5173",
+    origin: "https://netflix-clone-front-ehb5.onrender.com",
     credentials: true
 }
 
